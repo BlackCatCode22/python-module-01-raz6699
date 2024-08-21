@@ -1,5 +1,12 @@
-hrs = input('Enter Hours: ')
-rate = input('Enter Rate per Hour: ')
-pay = float(hrs) * float(rate)
+sh = input("Enter Hours: ")
+sr = input("Enter Rate: ")
+fh = float(sh)
+fr = float(sr)
 
-print("Pay:", pay)
+if fh > 40 :
+    reg = fr * 40
+    otp = (fh - 40.0) * (fr * 1.5)
+    xp = reg + otp
+else:
+    xp = fh * fr
+print("Pay:", xp)
